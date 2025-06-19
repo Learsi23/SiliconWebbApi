@@ -8,8 +8,8 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("NextJsApp", policy =>
     {
-        policy.WithOrigins("http://localhost:3000", // Next.js en desarrollo
-                          "https://tudominio.com") // Producción
+        policy.WithOrigins("http://localhost:3000", 
+                          "https://tudominio.com") 
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
